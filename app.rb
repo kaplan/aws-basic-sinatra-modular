@@ -4,7 +4,7 @@ class App < Sinatra::Base
   end
 
   get '/something' do
-    'something here?'
+    'something here has changed?'
   end
 
   post '/github-update' do
