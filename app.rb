@@ -1,18 +1,18 @@
 class App < Sinatra::Base
   get '/' do
-    'hello, world yo!'
+    "hello, world yo!"
   end
 
   get '/something' do
-    'wow?! something here has changed through a pull and rerun!'
+    "wow?! something here has changed through a pull and rerun!"
   end
 
-  # get '/finally' do
-  #   erb :finally
-  # end
+  get '/finally' do
+    "finally?"
+  end
 
   post '/github-update' do
-    puts 'updating with pull and output?'
+    puts "updating with pull and output?"
     `git pull 2>&1`
   end
 
