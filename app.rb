@@ -7,6 +7,10 @@ class App < Sinatra::Base
     'wow?! something here has changed through a pull and rerun!'
   end
 
+  get '/finally' do
+    erb :finally
+  end
+
   post '/github-update' do
     puts 'updating with pull and output?'
     `git pull 2>&1`
