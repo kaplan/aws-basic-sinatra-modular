@@ -8,7 +8,7 @@ class App < Sinatra::Base
   end
 
   post '/github-update' do
-    puts 'updating?'
+    puts 'updating with push-pull?'
   end
 
   run! if app_file == $0
