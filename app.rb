@@ -4,7 +4,11 @@ class App < Sinatra::Base
   end
 
   get '/something' do
-    "wow?! something here has changed through a pull and rerun!"
+    "wow! something here has changed through a pull and rerun!"
+  end
+
+  get '/up-and-running' do
+    erb :up
   end
 
   get '/finally' do
