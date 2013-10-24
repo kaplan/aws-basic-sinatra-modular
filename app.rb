@@ -4,7 +4,7 @@ class App < Sinatra::Base
   end
 
   get '/something' do
-    "wow! something here has changed through a pull and rerun!"
+    "wow! something here has changed through a pull and rerun. And now while I'm not logged into EC2?"
   end
 
   get '/up-and-running' do
